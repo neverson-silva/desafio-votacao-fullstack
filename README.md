@@ -1,5 +1,10 @@
 # Desafio Votação Fullstack
 
+## Desktop
+![Preview Desktop](<preview-desktop.gif>)
+
+## Mobile
+![Preview Mobile](<preview-mobile.gif>)
 ## 📋 Descrição do Projeto
 
 Sistema de votação online desenvolvido com foco em arquitetura limpa, componentização e experiência do usuário.
