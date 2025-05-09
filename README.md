@@ -1,3 +1,114 @@
+# Desafio Votação Fullstack
+
+## 📋 Descrição do Projeto
+
+Sistema de votação online desenvolvido com foco em arquitetura limpa, componentização e experiência do usuário.
+
+## 🏗️ Arquitetura Backend
+
+### Estrutura de Pastas e Organização
+- Implementação seguindo princípios de Clean Code e Arquitetura Limpa
+- Separação clara de responsabilidades:
+  - `controllers`: Endpoints da API
+  - `services`: Lógica de negócio
+  - `repositories`: Camada de persistência
+  - `models`: Entidades de domínio
+  - `exceptions`: Tratamento centralizado de exceções
+
+### Padrões de Projeto
+- Clean Code e Clean Architecture
+- Tratamento de exceções com `HttpException` personalizada
+- Validações com Bean Validation
+
+### Estratégias de Exceção
+- Exceções customizadas para diferentes cenários:
+  - `HttpException.notFound()`: Recursos não encontrados
+  - `HttpException.badRequest()`: Requisições inválidas
+  - `HttpException.conflict()`: Conflitos de negócio (ex: voto duplicado)
+
+### Tecnologias
+- **Linguagem**: Java 21
+- **Framework**: Spring Boot
+- **Persistência**: Spring Data JPA
+- **Documentação**: Swagger/OpenAPI
+- **Validação**: Bean Validation
+- **Build**: Gradle
+
+## 🖥️ Arquitetura Frontend
+
+### Conceitos e Escolhas
+- Single Page Application (SPA) sem rotas, priorizando simplicidade
+- TypeScript para tipagem forte e código mais seguro
+- Componentização com Shadcn UI para componentes responsivos e customizáveis
+
+### Bibliotecas e Ferramentas
+- **Linguagem**: TypeScript
+- **Framework**: React 19
+- **Bundler**: Vite
+- **UI Components**: Shadcn UI (componentes acessíveis e customizáveis)
+- **State Management**: 
+  - React Query para gerenciamento de estado de servidor
+  - Hooks personalizados para lógicas específicas
+- **Estilização**: Tailwind CSS
+- **Validação**: Zod
+- **Formulários**: React Hook Form
+
+### Estratégias de Desenvolvimento
+- Hooks customizados para operações como:
+  - [useVotacaoPauta](cci:1://file:///Users/neverson/IdeaProjects/desafio-votacao-fullstack/frontend/src/hooks/useVotacaoPauta.tsx:5:0-28:2): Lógica de votação
+  - [useCriarPauta](cci:1://file:///Users/neverson/IdeaProjects/desafio-votacao-fullstack/frontend/src/hooks/useCriarPauta.tsx:4:0-20:2): Criação de novas pautas
+  - [useAberturaSessao](cci:1://file:///Users/neverson/IdeaProjects/desafio-votacao-fullstack/frontend/src/hooks/useAberturaSessao.tsx:4:0-30:2): Gerenciamento de sessões
+- Tratamento de erros com toasts
+- Validações de formulário no frontend
+
+## 🔧 Requisitos
+
+- Java 21
+- Node.js 20
+- npm ou yarn
+
+## 📦 Instalação e Execução
+
+### Backend (Spring Boot)
+
+1. **Baixar dependências e compilar**
+```bash
+./gradlew clean build
+```
+
+2. **Executar aplicação**
+```bash
+./gradlew bootRun
+```
+
+### FrontEnd
+
+1. **Navegar para o diretório frontend**
+```bash
+cd ../frontend
+```
+
+2. **Instalar dependências**
+```bash
+npm install
+```
+
+3. **Executar aplicação em modo desenvolvimento**
+```bash
+npm run dev
+```
+
+### 🌐 Endpoints
+
+  Backend: http://localhost:8080
+  Frontend: http://localhost:3000
+
+📝 Testes
+Backend
+```bash
+./gradlew test
+```
+
 # Votação
 
 ## Objetivo

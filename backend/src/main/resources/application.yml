@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: votacao
+  datasource:
+    url: jdbc:sqlite:votacao.db
+    driver-class-name: org.sqlite.JDBC
+  jpa:
+    show-sql: false
+    database-platform: org.hibernate.community.dialect.SQLiteDialect
+    hibernate:
+      ddl-auto: update
+springdoc:
+  swagger-ui:
+    path: /docs
+  api-docs:
+    path: /v3/api-docs
+    enabled: true
