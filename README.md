@@ -1,8 +1,5 @@
 # Desafio Votação Fullstack
 
-## Desktop
-![Preview Desktop](<preview-desktop.gif>)
-
 ## Mobile
 ![Preview Mobile](<preview-mobile.gif>)
 ## 📋 Descrição do Projeto
